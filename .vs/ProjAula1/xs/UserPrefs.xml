@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{0106A9FF-49F9-44C2-9FB9-0FAC90744E4D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Triangulo/TRIANGULO.cs">
+    <Files>
+      <File FileName="Introducao/Program.cs" Line="12" Column="26" />
+      <File FileName="IMC/Program.cs" Line="9" Column="2" />
+      <File FileName="Triangulo/Program.cs" Line="8" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProjAula1" expanded="True">
+            <Node name="Equacao" expanded="True">
+              <Node name="Introducao" expanded="True" />
+            </Node>
+            <Node name="IMC" expanded="True" />
+            <Node name="Triangulo" expanded="True">
+              <Node name="TRIANGULO.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Equacao PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.Triangulo FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

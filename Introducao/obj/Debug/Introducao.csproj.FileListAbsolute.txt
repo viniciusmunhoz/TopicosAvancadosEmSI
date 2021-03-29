@@ -1,0 +1,5 @@
+/Users/viniciusmunhoz/Projects/ProjAula1/Introducao/obj/Debug/Introducao.csproj.CoreCompileInputs.cache
+/Users/viniciusmunhoz/Projects/ProjAula1/Introducao/bin/Debug/Introducao.exe
+/Users/viniciusmunhoz/Projects/ProjAula1/Introducao/bin/Debug/Introducao.pdb
+/Users/viniciusmunhoz/Projects/ProjAula1/Introducao/obj/Debug/Introducao.exe
+/Users/viniciusmunhoz/Projects/ProjAula1/Introducao/obj/Debug/Introducao.pdb

@@ -1,0 +1,6 @@
+/Users/viniciusmunhoz/Projects/ProjAula1/IMC/bin/Debug/IMC.exe
+/Users/viniciusmunhoz/Projects/ProjAula1/IMC/bin/Debug/IMC.pdb
+/Users/viniciusmunhoz/Projects/ProjAula1/IMC/obj/anycpu/Debug/IMC.csprojAssemblyReference.cache
+/Users/viniciusmunhoz/Projects/ProjAula1/IMC/obj/anycpu/Debug/IMC.csproj.CoreCompileInputs.cache
+/Users/viniciusmunhoz/Projects/ProjAula1/IMC/obj/anycpu/Debug/IMC.exe
+/Users/viniciusmunhoz/Projects/ProjAula1/IMC/obj/anycpu/Debug/IMC.pdb
