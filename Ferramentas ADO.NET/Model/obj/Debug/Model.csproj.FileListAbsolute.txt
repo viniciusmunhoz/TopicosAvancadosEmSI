@@ -1,0 +1,18 @@
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio22032021/Model/bin/Debug/Model.dll
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio22032021/Model/bin/Debug/Model.pdb
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio22032021/Model/obj/Debug/Model.csprojAssemblyReference.cache
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio22032021/Model/obj/Debug/Model.csproj.CoreCompileInputs.cache
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio22032021/Model/obj/Debug/Model.dll
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio22032021/Model/obj/Debug/Model.pdb
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio29032021/Model/bin/Debug/Model.dll
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio29032021/Model/bin/Debug/Model.pdb
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio29032021/Model/obj/Debug/Model.csprojAssemblyReference.cache
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio29032021/Model/obj/Debug/Model.csproj.CoreCompileInputs.cache
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio29032021/Model/obj/Debug/Model.dll
+C:/TopicosAvancadosEmSistemasDeInformacao/SolutionExercicio29032021/Model/obj/Debug/Model.pdb
+/Users/viniciusmunhoz/Documents/FACULDADE/TopicosAvancadosSI/Ferramentas ADO.NET/Model/bin/Debug/Model.dll
+/Users/viniciusmunhoz/Documents/FACULDADE/TopicosAvancadosSI/Ferramentas ADO.NET/Model/bin/Debug/Model.pdb
+/Users/viniciusmunhoz/Documents/FACULDADE/TopicosAvancadosSI/Ferramentas ADO.NET/Model/obj/Debug/Model.csprojAssemblyReference.cache
+/Users/viniciusmunhoz/Documents/FACULDADE/TopicosAvancadosSI/Ferramentas ADO.NET/Model/obj/Debug/Model.csproj.CoreCompileInputs.cache
+/Users/viniciusmunhoz/Documents/FACULDADE/TopicosAvancadosSI/Ferramentas ADO.NET/Model/obj/Debug/Model.dll
+/Users/viniciusmunhoz/Documents/FACULDADE/TopicosAvancadosSI/Ferramentas ADO.NET/Model/obj/Debug/Model.pdb
