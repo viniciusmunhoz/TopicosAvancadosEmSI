@@ -12,10 +12,12 @@ namespace Dal
     public class DB : IDisposable
     {
         private SqlConnection myConnection;
-
+        private string strConn;
         public DB()
         {
-            myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionSQLServer"].ConnectionString);
+            strConn = ("Data Source=BR-PF1CDNKU\\SQLEXPRESS;Initial Catalog=DB_P2;Integrated Security=true");
+            //myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionSQLServer"].ConnectionString);
+            myConnection = new SqlConnection(strConn);
             myConnection.Open();
         }
 

@@ -9,3 +9,9 @@ C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Model\bin\Debug\Model.pdb
 C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Model\obj\Debug\Model.dll
 C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Model\obj\Debug\Model.pdb
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Model\bin\Debug\Model.dll
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Model\bin\Debug\Model.pdb
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Model\obj\Debug\Model.dll
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Model\obj\Debug\Model.pdb

@@ -14,3 +14,12 @@ C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Dal\bin\Debug\Dal.pdb
 C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Dal\bin\Debug\Model.dll
 C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Dal\bin\Debug\Model.pdb
 C:\GITHUB\TopicosAvancadosEmSI\Atividade02_22032021\Dal\obj\Debug\Dal.pdb
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\bin\Debug\Dal.dll
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\bin\Debug\Dal.pdb
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\bin\Debug\Model.dll
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\bin\Debug\Model.pdb
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\obj\Debug\Dal.dll
+C:\DB_FACULDADE\TopicosAvancadosSI\ProjWebAula05042021\Dal\obj\Debug\Dal.pdb

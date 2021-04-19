@@ -42,11 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dal_Cidade\CidadeCadastroDB.cs" />
+    <Compile Include="Dal_Cidade\ICidadeCadastroDB.cs" />
+    <Compile Include="Dal_ItinerariocomLinha\IItinerariocomLinhaCadastroDB.cs" />
+    <Compile Include="Dal_ItinerariocomLinha\ItinerariocomLinhaCadastroDB.cs" />
+    <Compile Include="Dal_Itinerario\IItinerarioCadastroDB.cs" />
+    <Compile Include="Dal_Itinerario\ItinerarioCadastroDB.cs" />
+    <Compile Include="Dal_LinhacomEmpresa\ILinhacomEmpresaCadastroDB.cs" />
+    <Compile Include="Dal_LinhacomEmpresa\LinhacomEmpresaCadastroDB.cs" />
+    <Compile Include="Dal_Linha\ILinhaCadastroDB.cs" />
+    <Compile Include="Dal_Linha\LinhaCadastroDB.cs" />
+    <Compile Include="Dal_Logradouro\LogradouroCadastroDB.cs" />
+    <Compile Include="Dal_Logradouro\ILogradouroCadastroDB.cs" />
+    <Compile Include="Dal_QuadroHorario\IQuadroHorarioCadastroDB.cs" />
+    <Compile Include="Dal_QuadroHorario\QuadroHorarioCadastroDB.cs" />
     <Compile Include="DB.cs" />
-    <Compile Include="EmployeeDB.cs" />
-    <Compile Include="FerramentaDB.cs" />
-    <Compile Include="IEmployeeDB.cs" />
-    <Compile Include="IFerramentaDB.cs" />
+    <Compile Include="Dal_Empresa\EmpresaCadastroDB.cs" />
+    <Compile Include="Dal_Empresa\IEmpresaCadastroDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,5 +67,6 @@
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
