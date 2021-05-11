@@ -31,13 +31,13 @@ namespace Dal
             {
                 var item = new Orcamento()
                 {
-                    Id = int.Parse(returnData["id"].ToString()),
-                    DtInicio = returnData["dtinicio"].ToString(),
-                    DtFim = returnData["dtfim"].ToString(),
-                    QtdDias = int.Parse(returnData["qtddias"].ToString()),
-                    Descricao = returnData["descricao"].ToString(),
-                    Titulo = returnData["titulo"].ToString(),
-                    Modulo = returnData["modulo"].ToString(),
+                    id_Orcamento = int.Parse(returnData["id_Orcamento"].ToString()),
+                    DtInicio = returnData["DtInicio"].ToString(),
+                    DtFim = returnData["DtFim"].ToString(),
+                    QtdDias = int.Parse(returnData["QtdDias"].ToString()),
+                    Descricao = returnData["Descricao"].ToString(),
+                    Titulo = returnData["Titulo"].ToString(),
+                    Modulo = int.Parse(returnData["id_Modulo"].ToString()),
                 };
                 lst.Add(item);
             }

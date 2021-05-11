@@ -16,7 +16,7 @@
     <br />
     <br />
 
-    <asp:GridView ID="GVAmbiente" runat="server" GridLines="Vertical" AutoGenerateColumns="False" OnRowCommand="GVAmbiente_RowCommand" class="table table-striped">
+    <asp:GridView ID="DgvAmbiente" runat="server" GridLines="Vertical" AutoGenerateColumns="False" OnRowCommand="DgvAmbiente_RowCommand" class="table table-striped">
         <Columns>
             <asp:BoundField DataField="id" HeaderText="Id" />
             <asp:BoundField DataField="descricao" HeaderText="Descrição" />

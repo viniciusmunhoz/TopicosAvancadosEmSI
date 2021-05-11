@@ -43,3 +43,12 @@ C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.csproj.Cor
 C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.csproj.CopyComplete
 C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.dll
 C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.pdb
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\bin\Debug\Dal.dll
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\bin\Debug\Dal.pdb
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\bin\Debug\Model.dll
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\bin\Debug\Model.pdb
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\obj\Debug\Dal.dll
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Dal\obj\Debug\Dal.pdb

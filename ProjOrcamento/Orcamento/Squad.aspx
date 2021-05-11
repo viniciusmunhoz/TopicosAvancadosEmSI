@@ -20,7 +20,7 @@
     <br />
     <br />
 
-    <asp:GridView ID="GVSquad" runat="server" GridLines="Vertical" AutoGenerateColumns="False" OnRowCommand="GVSquad_RowCommand" class="table table-striped">
+    <asp:GridView ID="DgvSquad" runat="server" GridLines="Vertical" AutoGenerateColumns="False" OnRowCommand="DgvSquad_RowCommand" class="table table-striped">
         <Columns>
             <asp:BoundField DataField="id" HeaderText="Id" />
             <asp:BoundField DataField="nome" HeaderText="Nome" />

@@ -6,10 +6,10 @@
     <asp:HiddenField ID="IdH" runat="server" />
     <br />
     <h4>Ambiente: </h4>
-    <asp:DropDownList ID="DdlAmbiente" runat="server" DataSourceID="Ambiente" DataTextField="descricao" DataValueField="descricao"></asp:DropDownList>
+    <asp:DropDownList ID="cmbAmbiente" runat="server" DataSourceID="Ambiente" DataTextField="descricao" DataValueField="descricao"></asp:DropDownList>
     <asp:SqlDataSource ID="Ambiente" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionSQLServer %>" SelectCommand="SELECT [descricao] FROM [TB_AMBIENTE]"></asp:SqlDataSource>
     <h4>Squad: </h4>
-    <asp:DropDownList ID="DdlSquad" runat="server" DataSourceID="Squad" DataTextField="nome" DataValueField="nome"></asp:DropDownList>
+    <asp:DropDownList ID="cmbSquad" runat="server" DataSourceID="Squad" DataTextField="nome" DataValueField="nome"></asp:DropDownList>
     <asp:SqlDataSource ID="Squad" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionSQLServer %>" SelectCommand="SELECT [nome] FROM [TB_SQUAD]"></asp:SqlDataSource>
     <br />
     <asp:Label ID="LblMsg" runat="server"></asp:Label>
@@ -20,7 +20,7 @@
     <br />
     <br />
 
-    <asp:GridView ID="GVModulo" runat="server" GridLines="Vertical" AutoGenerateColumns="False" OnRowCommand="GVModulo_RowCommand" class="table table-striped">
+    <asp:GridView ID="dgvModulo" runat="server" GridLines="Vertical" AutoGenerateColumns="False" OnRowCommand="dgvModulo_RowCommand" class="table table-striped">
         <Columns>
             <asp:BoundField DataField="id" HeaderText="Id" />
             <asp:BoundField DataField="ambiente" HeaderText="Ambiente" />

@@ -24,20 +24,20 @@ namespace Orcamento
             {
                 if (db.Insert(squad))
                 {
-                    LblMsg.Text = "Registro inserido!";
+                    LblMsg.Text = "O Registro foi inserido com sucesso!";
                     LoadGrid();
                 }
                 else
-                    LblMsg.Text = "Erro ao inserir registro";
+                    LblMsg.Text = "Ocorreu um erro ao inserir o registro!";
             }
             else
             {
                 if (db.Update(squad, int.Parse(IdH.Value)))
                 {
-                    LblMsg.Text = "Registro atualizado!";
+                    LblMsg.Text = "O registro foi atualizado com sucesso!";
                 }
                 else
-                    LblMsg.Text = "Erro ao atualizar registro";
+                    LblMsg.Text = "Ocorreu um erro ao atualizar o registro";
             }
 
             LoadGrid();
@@ -54,14 +54,14 @@ namespace Orcamento
 
         private void LoadGrid()
         {
-            GVSquad.DataSource = new SquadDB().GetAll();
-            GVSquad.DataBind();
+            DgvSquad.DataSource = new SquadDB().GetAll();
+            DgvSquad.DataBind();
         }
 
-        protected void GVSquad_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void DgvSquad_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             int index = Convert.ToInt32(e.CommandArgument);
-            GridViewRow row = GVSquad.Rows[index];
+            GridViewRow row = DgvSquad.Rows[index];
 
             int id = Convert.ToInt32(row.Cells[0].Text);
 
@@ -79,7 +79,7 @@ namespace Orcamento
 
                 TxtNome.Text = squad.Nome;
                 TxtQtdPessoas.Text = squad.QtdPessoas.ToString();
-                IdH.Value = squad.Id.ToString();
+                IdH.Value = squad.id_Squad.ToString();
             }
         }
 

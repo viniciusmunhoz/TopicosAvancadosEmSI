@@ -31,9 +31,9 @@ namespace Dal
             {
                 var item = new Squad()
                 {
-                    Id = int.Parse(returnData["id"].ToString()),
-                    Nome = returnData["nome"].ToString(),
-                    QtdPessoas = int.Parse(returnData["qtdpessoas"].ToString()),
+                    id_Squad = int.Parse(returnData["id_Squad"].ToString()),
+                    Nome = returnData["Nome"].ToString(),
+                    QtdPessoas = int.Parse(returnData["QtdPessoas"].ToString()),
                 };
                 lst.Add(item);
             }

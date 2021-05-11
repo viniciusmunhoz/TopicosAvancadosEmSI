@@ -28,3 +28,9 @@ C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Model\obj\Debug\Model.csproj
 C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Model\obj\Debug\Model.dll
 C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Model\obj\Debug\Model.pdb
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Model\bin\Debug\Model.dll
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Model\bin\Debug\Model.pdb
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Model\obj\Debug\Model.dll
+C:\GITHUB\TopicosAvancadosEmSI\ProjOrcamento\Model\obj\Debug\Model.pdb

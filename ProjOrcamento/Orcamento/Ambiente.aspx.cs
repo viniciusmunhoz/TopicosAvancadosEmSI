@@ -24,20 +24,20 @@ namespace Orcamento
             {
                 if (db.Insert(ambiente))
                 {
-                    LblMsg.Text = "Registro inserido!";
+                    LblMsg.Text = "O registro foi inserido com sucesso!";
                     LoadGrid();
                 }
                 else
-                    LblMsg.Text = "Erro ao inserir registro";
+                    LblMsg.Text = "O registro não foi inserido..";
             }
             else
             {
                 if (db.Update(ambiente, int.Parse(IdH.Value)))
                 {
-                    LblMsg.Text = "Registro atualizado!";
+                    LblMsg.Text = "O registro foi atualizado com sucesso!";
                 }
                 else
-                    LblMsg.Text = "Erro ao atualizar registro";
+                    LblMsg.Text = "Ocorreu um erro ao atualizar o registro..";
             }
 
             LoadGrid();
@@ -53,14 +53,14 @@ namespace Orcamento
 
         private void LoadGrid()
         {
-            GVAmbiente.DataSource = new AmbienteDB().GetAll();
-            GVAmbiente.DataBind();
+            DgvAmbiente.DataSource = new AmbienteDB().GetAll();
+            DgvAmbiente.DataBind();
         }
 
-        protected void GVAmbiente_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void DgvAmbiente_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             int index = Convert.ToInt32(e.CommandArgument);
-            GridViewRow row = GVAmbiente.Rows[index];
+            GridViewRow row = DgvAmbiente.Rows[index];
 
             int id = Convert.ToInt32(row.Cells[0].Text);
 
@@ -77,7 +77,7 @@ namespace Orcamento
                 Model.Ambiente ambiente = db.SelectById(id);
 
                 TxtDescricao.Text = ambiente.Descricao;
-                IdH.Value = ambiente.Id.ToString();
+                IdH.Value = ambiente.id_Ambiente.ToString();
             }
         }
 

@@ -9,15 +9,15 @@ namespace Model
     public class Squad
     {
         #region Propriedades
-        public int Id { get; set; }
+        public int id_Squad { get; set; }
         public string Nome { get; set; }
         public int QtdPessoas { get; set; }
         
-        public const string INSERT = "INSERT INTO TB_SQUAD (nome, qtdpessoas) VALUES ('{0}', {1})";
-        public const string GETALL = "SELECT id, nome, qtdpessoas FROM TB_SQUAD";
-        public const string UPDATE = "UPDATE TB_SQUAD SET nome = '{0}', qtdpessoas = {1} WHERE id = {2}";
-        public const string DELETE = "DELETE FROM TB_SQUAD WHERE id = {0}";
-        public const string GETBYID = "SELECT id, nome, qtdpessoas FROM TB_SQUAD WHERE id = {0}";
+        public const string INSERT = "INSERT INTO Squad (Nome, QtdPessoas) VALUES ('{0}', {1})";
+        public const string GETALL = "SELECT * FROM Squad";
+        public const string UPDATE = "UPDATE Squad SET nome = '{0}', QtdPessoas = {1} WHERE id = {2}";
+        public const string DELETE = "DELETE FROM Squad WHERE id_Squad = {0}";
+        public const string GETBYID = "SELECT * FROM Squad WHERE id_Squad = {0}";
 
         #endregion
     }

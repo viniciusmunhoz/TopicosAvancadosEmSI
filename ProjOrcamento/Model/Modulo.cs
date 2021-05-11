@@ -9,15 +9,15 @@ namespace Model
     public class Modulo
     {
         #region Propriedades
-        public int Id { get; set; }
-        public string Ambiente { get; set; }
-        public string Squad { get; set; }
+        public int id_Modulo { get; set; }
+        public int Ambiente { get; set; }  //DUVIDA
+        public int Squad { get; set; }
         
-        public const string INSERT = "INSERT INTO TB_MODULO (ambiente, squad) VALUES ('{0}', '{1}')";
-        public const string GETALL = "SELECT id, ambiente, squad FROM TB_MODULO";
-        public const string UPDATE = "UPDATE TB_MODULO SET ambiente = '{0}', squad = '{1}' WHERE id = {2}";
-        public const string DELETE = "DELETE FROM TB_MODULO WHERE id = {0}";
-        public const string GETBYID = "SELECT id, ambiente, squad FROM TB_MODULO WHERE id = {0}";
+        public const string INSERT = "INSERT INTO Modulo (ambiente, squad) VALUES ('{0}', '{1}')";
+        public const string GETALL = "SELECT * FROM Modulo";
+        public const string UPDATE = "UPDATE Modulo SET id_Ambiente = '{0}', id_Squad = '{1}' WHERE id_Modulo = {2}";
+        public const string DELETE = "DELETE FROM Modulo WHERE id_Modulo = {0}";
+        public const string GETBYID = "SELECT * FROM Modulo WHERE id_Modulo = {0}";
 
         #endregion
     }

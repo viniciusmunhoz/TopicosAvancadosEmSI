@@ -31,9 +31,9 @@ namespace Dal
             {
                 var item = new Modulo()
                 {
-                    Id = int.Parse(returnData["id"].ToString()),
-                    Ambiente = returnData["ambiente"].ToString(),
-                    Squad = returnData["squad"].ToString(),
+                    id_Modulo = int.Parse(returnData["id_Modulo"].ToString()),
+                    Ambiente = int.Parse(returnData["id_Ambiente"].ToString()),
+                    Squad = int.Parse(returnData["id_Squad"].ToString()),
                 };
                 lst.Add(item);
             }

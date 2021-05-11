@@ -31,8 +31,8 @@ namespace Dal
             {
                 var item = new Ambiente()
                 {
-                    Id = int.Parse(returnData["id"].ToString()),
-                    Descricao = returnData["descricao"].ToString(),
+                    id_Ambiente = int.Parse(returnData["id_Ambiente"].ToString()),
+                    Descricao = returnData["Descricao"].ToString(),
                 };
                 lst.Add(item);
             }

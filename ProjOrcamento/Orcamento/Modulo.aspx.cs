@@ -24,20 +24,20 @@ namespace Orcamento
             {
                 if (db.Insert(modulo))
                 {
-                    LblMsg.Text = "Registro inserido!";
+                    LblMsg.Text = "O registro foi inserido com sucesso!";
                     LoadGrid();
                 }
                 else
-                    LblMsg.Text = "Erro ao inserir registro";
+                    LblMsg.Text = "Erro o registro não foi inserido..";
             }
             else
             {
                 if (db.Update(modulo, int.Parse(IdH.Value)))
                 {
-                    LblMsg.Text = "Registro atualizado!";
+                    LblMsg.Text = "O registro foi atualizado com sucesso!";
                 }
                 else
-                    LblMsg.Text = "Erro ao atualizar registro";
+                    LblMsg.Text = "Ocorreu um erro ao atualizar o registro..";
             }
 
             LoadGrid();
@@ -47,21 +47,21 @@ namespace Orcamento
         {
             return new Model.Modulo()
             {
-                Ambiente = DdlAmbiente.Text,
-                Squad = DdlSquad.Text,
+                Ambiente = int.Parse(cmbAmbiente.Text),
+                Squad = int.Parse(cmbSquad.Text),
             };
         }
 
         private void LoadGrid()
         {
-            GVModulo.DataSource = new ModuloDB().GetAll();
-            GVModulo.DataBind();
+            dgvModulo.DataSource = new ModuloDB().GetAll();
+            dgvModulo.DataBind();
         }
 
-        protected void GVModulo_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void dgvModulo_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             int index = Convert.ToInt32(e.CommandArgument);
-            GridViewRow row = GVModulo.Rows[index];
+            GridViewRow row = dgvModulo.Rows[index];
 
             int id = Convert.ToInt32(row.Cells[0].Text);
 
@@ -77,27 +77,16 @@ namespace Orcamento
             {
                 Model.Modulo modulo = db.SelectById(id);
 
-                DdlAmbiente.Text = modulo.Ambiente;
-                DdlSquad.Text = modulo.Squad.ToString();
-                IdH.Value = modulo.Id.ToString();
+                cmbAmbiente.Text = modulo.Ambiente.ToString();
+                cmbSquad.Text = modulo.Squad.ToString();
+                IdH.Value = modulo.id_Modulo.ToString();
             }
         }
 
         protected void btnNovo_Click(object sender, EventArgs e)
         {
             IdH.Value = "0";
-            DdlAmbiente.Focus();
+            cmbAmbiente.Focus();
         }
-
-        /*protected void BtnAlbum_Click(object sender, EventArgs e)
-        {
-            if (GVModulo.Rows.Count == 0)
-            {
-                LblAlerta.Enabled = true;
-                LblAlerta.Visible = true;
-            }
-            else
-                Response.Redirect("WebForm2.aspx");
-        }*/
     }
 }
