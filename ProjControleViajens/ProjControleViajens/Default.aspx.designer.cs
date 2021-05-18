@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjControleViajens
+namespace ProjControleViagens
 {
 
 

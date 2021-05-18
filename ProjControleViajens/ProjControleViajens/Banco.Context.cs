@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjControleViajens
+namespace ProjControleViagens
 {
     using System;
     using System.Data.Entity;
