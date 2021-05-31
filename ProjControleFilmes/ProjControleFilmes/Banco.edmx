@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FilmesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TB_FAVORITOS">
+          <Key>
+            <PropertyRef Name="idFavorito" />
+          </Key>
+          <Property Name="idFavorito" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idFilme" Type="int" />
+        </EntityType>
+        <EntityType Name="TB_FILMES">
+          <Key>
+            <PropertyRef Name="idFilme" />
+          </Key>
+          <Property Name="idFilme" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="500" />
+          <Property Name="Diretor" Type="varchar" MaxLength="200" />
+          <Property Name="Genero" Type="varchar" MaxLength="30" />
+          <Property Name="DataLancamento" Type="date" />
+        </EntityType>
+        <Association Name="FK_idFilme_F">
+          <End Role="TB_FILMES" Type="Self.TB_FILMES" Multiplicity="0..1" />
+          <End Role="TB_FAVORITOS" Type="Self.TB_FAVORITOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_FILMES">
+              <PropertyRef Name="idFilme" />
+            </Principal>
+            <Dependent Role="TB_FAVORITOS">
+              <PropertyRef Name="idFilme" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FilmesDBModelStoreContainer">
+          <EntitySet Name="TB_FAVORITOS" EntityType="Self.TB_FAVORITOS" Schema="CSCMWS\vmunhozrodri" store:Type="Tables" />
+          <EntitySet Name="TB_FILMES" EntityType="Self.TB_FILMES" Schema="CSCMWS\vmunhozrodri" store:Type="Tables" />
+          <AssociationSet Name="FK_idFilme_F" Association="Self.FK_idFilme_F">
+            <End Role="TB_FILMES" EntitySet="TB_FILMES" />
+            <End Role="TB_FAVORITOS" EntitySet="TB_FAVORITOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FilmesDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TB_FAVORITOS">
+          <Key>
+            <PropertyRef Name="idFavorito" />
+          </Key>
+          <Property Name="idFavorito" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idFilme" Type="Int32" />
+          <NavigationProperty Name="TB_FILMES" Relationship="Self.FK_idFilme_F" FromRole="TB_FAVORITOS" ToRole="TB_FILMES" />
+        </EntityType>
+        <EntityType Name="TB_FILMES">
+          <Key>
+            <PropertyRef Name="idFilme" />
+          </Key>
+          <Property Name="idFilme" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Titulo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Diretor" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Genero" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DataLancamento" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="TB_FAVORITOS" Relationship="Self.FK_idFilme_F" FromRole="TB_FILMES" ToRole="TB_FAVORITOS" />
+        </EntityType>
+        <Association Name="FK_idFilme_F">
+          <End Role="TB_FILMES" Type="Self.TB_FILMES" Multiplicity="0..1" />
+          <End Role="TB_FAVORITOS" Type="Self.TB_FAVORITOS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_FILMES">
+              <PropertyRef Name="idFilme" />
+            </Principal>
+            <Dependent Role="TB_FAVORITOS">
+              <PropertyRef Name="idFilme" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FilmesDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_FAVORITOS" EntityType="Self.TB_FAVORITOS" />
+          <EntitySet Name="TB_FILMES" EntityType="Self.TB_FILMES" />
+          <AssociationSet Name="FK_idFilme_F" Association="Self.FK_idFilme_F">
+            <End Role="TB_FILMES" EntitySet="TB_FILMES" />
+            <End Role="TB_FAVORITOS" EntitySet="TB_FAVORITOS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FilmesDBModelStoreContainer" CdmEntityContainer="FilmesDBEntities">
+          <EntitySetMapping Name="TB_FAVORITOS">
+            <EntityTypeMapping TypeName="FilmesDBModel.TB_FAVORITOS">
+              <MappingFragment StoreEntitySet="TB_FAVORITOS">
+                <ScalarProperty Name="idFavorito" ColumnName="idFavorito" />
+                <ScalarProperty Name="idFilme" ColumnName="idFilme" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_FILMES">
+            <EntityTypeMapping TypeName="FilmesDBModel.TB_FILMES">
+              <MappingFragment StoreEntitySet="TB_FILMES">
+                <ScalarProperty Name="idFilme" ColumnName="idFilme" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Diretor" ColumnName="Diretor" />
+                <ScalarProperty Name="Genero" ColumnName="Genero" />
+                <ScalarProperty Name="DataLancamento" ColumnName="DataLancamento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

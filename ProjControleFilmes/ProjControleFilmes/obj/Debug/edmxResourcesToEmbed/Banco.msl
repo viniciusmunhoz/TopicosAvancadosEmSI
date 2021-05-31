@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FilmesDBModelStoreContainer" CdmEntityContainer="FilmesDBEntities">
+    <EntitySetMapping Name="TB_FAVORITOS">
+      <EntityTypeMapping TypeName="FilmesDBModel.TB_FAVORITOS">
+        <MappingFragment StoreEntitySet="TB_FAVORITOS">
+          <ScalarProperty Name="idFavorito" ColumnName="idFavorito" />
+          <ScalarProperty Name="idFilme" ColumnName="idFilme" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_FILMES">
+      <EntityTypeMapping TypeName="FilmesDBModel.TB_FILMES">
+        <MappingFragment StoreEntitySet="TB_FILMES">
+          <ScalarProperty Name="idFilme" ColumnName="idFilme" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="Diretor" ColumnName="Diretor" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="DataLancamento" ColumnName="DataLancamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
