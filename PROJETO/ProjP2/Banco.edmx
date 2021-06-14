@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DBRelacaoAlunosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TB_AlunosDiplomados">
+          <Key>
+            <PropertyRef Name="Id_aluno" />
+          </Key>
+          <Property Name="Id_aluno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NOME" Type="varchar" MaxLength="50" />
+          <Property Name="CPF" Type="varchar" MaxLength="20" />
+          <Property Name="EMEC_CURSO" Type="varchar" MaxLength="30" />
+          <Property Name="CURSO" Type="varchar" MaxLength="50" />
+          <Property Name="ANO_INGRESSO" Type="varchar" MaxLength="4" />
+          <Property Name="SEMESTRE_INGRESSO" Type="varchar" MaxLength="30" />
+          <Property Name="DATA_EXPEDICAO_DIPLOMA" Type="varchar" MaxLength="20" />
+          <Property Name="DATA_REGISTRO_DIPLOMA" Type="varchar" MaxLength="20" />
+          <Property Name="NUMERO_REGISTRO_DIPLOMA" Type="varchar" MaxLength="20" />
+          <Property Name="DATA_PUBLICACAO_DOU" Type="varchar" MaxLength="30" />
+          <Property Name="EMEC_IES_EXPEDIDORA" Type="varchar" MaxLength="40" />
+          <Property Name="EMEC_IES_REGISTRADORA" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityContainer Name="DBRelacaoAlunosModelStoreContainer">
+          <EntitySet Name="TB_AlunosDiplomados" EntityType="Self.TB_AlunosDiplomados" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBRelacaoAlunosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TB_AlunosDiplomados">
+          <Key>
+            <PropertyRef Name="Id_aluno" />
+          </Key>
+          <Property Name="Id_aluno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CPF" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EMEC_CURSO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="CURSO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ANO_INGRESSO" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="SEMESTRE_INGRESSO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_EXPEDICAO_DIPLOMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_REGISTRO_DIPLOMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="NUMERO_REGISTRO_DIPLOMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DATA_PUBLICACAO_DOU" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EMEC_IES_EXPEDIDORA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EMEC_IES_REGISTRADORA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="DBRelacaoAlunosEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TB_AlunosDiplomados" EntityType="Self.TB_AlunosDiplomados" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBRelacaoAlunosModelStoreContainer" CdmEntityContainer="DBRelacaoAlunosEntities">
+          <EntitySetMapping Name="TB_AlunosDiplomados">
+            <EntityTypeMapping TypeName="DBRelacaoAlunosModel.TB_AlunosDiplomados">
+              <MappingFragment StoreEntitySet="TB_AlunosDiplomados">
+                <ScalarProperty Name="Id_aluno" ColumnName="Id_aluno" />
+                <ScalarProperty Name="NOME" ColumnName="NOME" />
+                <ScalarProperty Name="CPF" ColumnName="CPF" />
+                <ScalarProperty Name="EMEC_CURSO" ColumnName="EMEC_CURSO" />
+                <ScalarProperty Name="CURSO" ColumnName="CURSO" />
+                <ScalarProperty Name="ANO_INGRESSO" ColumnName="ANO_INGRESSO" />
+                <ScalarProperty Name="SEMESTRE_INGRESSO" ColumnName="SEMESTRE_INGRESSO" />
+                <ScalarProperty Name="DATA_EXPEDICAO_DIPLOMA" ColumnName="DATA_EXPEDICAO_DIPLOMA" />
+                <ScalarProperty Name="DATA_REGISTRO_DIPLOMA" ColumnName="DATA_REGISTRO_DIPLOMA" />
+                <ScalarProperty Name="NUMERO_REGISTRO_DIPLOMA" ColumnName="NUMERO_REGISTRO_DIPLOMA" />
+                <ScalarProperty Name="DATA_PUBLICACAO_DOU" ColumnName="DATA_PUBLICACAO_DOU" />
+                <ScalarProperty Name="EMEC_IES_EXPEDIDORA" ColumnName="EMEC_IES_EXPEDIDORA" />
+                <ScalarProperty Name="EMEC_IES_REGISTRADORA" ColumnName="EMEC_IES_REGISTRADORA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

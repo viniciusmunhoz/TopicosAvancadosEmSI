@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBRelacaoAlunosModelStoreContainer" CdmEntityContainer="DBRelacaoAlunosEntities">
+    <EntitySetMapping Name="TB_AlunosDiplomados">
+      <EntityTypeMapping TypeName="DBRelacaoAlunosModel.TB_AlunosDiplomados">
+        <MappingFragment StoreEntitySet="TB_AlunosDiplomados">
+          <ScalarProperty Name="Id_aluno" ColumnName="Id_aluno" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="EMEC_CURSO" ColumnName="EMEC_CURSO" />
+          <ScalarProperty Name="CURSO" ColumnName="CURSO" />
+          <ScalarProperty Name="ANO_INGRESSO" ColumnName="ANO_INGRESSO" />
+          <ScalarProperty Name="SEMESTRE_INGRESSO" ColumnName="SEMESTRE_INGRESSO" />
+          <ScalarProperty Name="DATA_EXPEDICAO_DIPLOMA" ColumnName="DATA_EXPEDICAO_DIPLOMA" />
+          <ScalarProperty Name="DATA_REGISTRO_DIPLOMA" ColumnName="DATA_REGISTRO_DIPLOMA" />
+          <ScalarProperty Name="NUMERO_REGISTRO_DIPLOMA" ColumnName="NUMERO_REGISTRO_DIPLOMA" />
+          <ScalarProperty Name="DATA_PUBLICACAO_DOU" ColumnName="DATA_PUBLICACAO_DOU" />
+          <ScalarProperty Name="EMEC_IES_EXPEDIDORA" ColumnName="EMEC_IES_EXPEDIDORA" />
+          <ScalarProperty Name="EMEC_IES_REGISTRADORA" ColumnName="EMEC_IES_REGISTRADORA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

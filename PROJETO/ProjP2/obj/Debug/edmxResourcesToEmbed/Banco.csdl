@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBRelacaoAlunosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_AlunosDiplomados">
+    <Key>
+      <PropertyRef Name="Id_aluno" />
+    </Key>
+    <Property Name="Id_aluno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CPF" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMEC_CURSO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="CURSO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ANO_INGRESSO" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="SEMESTRE_INGRESSO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DATA_EXPEDICAO_DIPLOMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA_REGISTRO_DIPLOMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NUMERO_REGISTRO_DIPLOMA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DATA_PUBLICACAO_DOU" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EMEC_IES_EXPEDIDORA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="EMEC_IES_REGISTRADORA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="DBRelacaoAlunosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_AlunosDiplomados" EntityType="Self.TB_AlunosDiplomados" />
+  </EntityContainer>
+</Schema>

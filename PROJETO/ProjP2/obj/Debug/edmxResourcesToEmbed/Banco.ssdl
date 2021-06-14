@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBRelacaoAlunosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_AlunosDiplomados">
+    <Key>
+      <PropertyRef Name="Id_aluno" />
+    </Key>
+    <Property Name="Id_aluno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" />
+    <Property Name="CPF" Type="varchar" MaxLength="20" />
+    <Property Name="EMEC_CURSO" Type="varchar" MaxLength="30" />
+    <Property Name="CURSO" Type="varchar" MaxLength="50" />
+    <Property Name="ANO_INGRESSO" Type="varchar" MaxLength="4" />
+    <Property Name="SEMESTRE_INGRESSO" Type="varchar" MaxLength="30" />
+    <Property Name="DATA_EXPEDICAO_DIPLOMA" Type="varchar" MaxLength="20" />
+    <Property Name="DATA_REGISTRO_DIPLOMA" Type="varchar" MaxLength="20" />
+    <Property Name="NUMERO_REGISTRO_DIPLOMA" Type="varchar" MaxLength="20" />
+    <Property Name="DATA_PUBLICACAO_DOU" Type="varchar" MaxLength="30" />
+    <Property Name="EMEC_IES_EXPEDIDORA" Type="varchar" MaxLength="40" />
+    <Property Name="EMEC_IES_REGISTRADORA" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityContainer Name="DBRelacaoAlunosModelStoreContainer">
+    <EntitySet Name="TB_AlunosDiplomados" EntityType="Self.TB_AlunosDiplomados" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
